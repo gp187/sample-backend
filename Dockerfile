@@ -11,7 +11,7 @@ COPY . .
 RUN npm install && npm run build -- --prod
 
 
-FROM docker.io/node:lts-alpine
+FROM docker.io/node:lts-alpine AS deploy
 
 ENV HOST=0.0.0.0
 ENV PORT=3000
