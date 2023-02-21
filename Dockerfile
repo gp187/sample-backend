@@ -7,7 +7,7 @@ ENV PORT=3000
 # Set working directory
 WORKDIR /app
 
-RUN addgroup --system sample-backend && adduser --system -G sample-backend sample-backend
+# RUN addgroup --system sample-backend && adduser --system -G sample-backend sample-backend
 
 # Copy the rest of the application code to the working directory
 COPY . .
