@@ -13,6 +13,6 @@ WORKDIR /app
 COPY . .
 
 # Install dependencies
-RUN npm install && npm run build -- --prod && chown -R sample-backend:sample-backend .
+RUN npm install && npm run build -- --prod
 
 CMD [ "node", "dist/sample-backend" ]
